@@ -2,36 +2,41 @@ import { component$ } from '@builder.io/qwik';
 
 export default component$(() => {
   return (
-    <section id="ai" class="py-20 bg-gray-900 text-white rounded-[3rem] mx-4 md:mx-10 my-10 overflow-hidden">
-      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 class="text-4xl font-bold mb-6">Sun'iy Intellekt Boshqaruvi</h2>
-          <p class="text-gray-400 text-lg mb-8">Bizning AI tizimimiz sensorlar orqali namlik, harorat va o'simlik holatini tahlil qiladi.</p>
-          <div class="grid grid-cols-2 gap-4">
-            <div class="bg-gray-800 p-4 rounded-xl border border-gray-700">
-              <span class="block text-green-500 font-bold text-2xl">98%</span>
-              <span class="text-sm text-gray-400">Aniq bashorat</span>
-            </div>
-            <div class="bg-gray-800 p-4 rounded-xl border border-gray-700">
-              <span class="block text-green-500 font-bold text-2xl">30%</span>
-              <span class="text-sm text-gray-400">Suv tejamkorligi</span>
-            </div>
-          </div>
+
+    <section class="py-24 bg-gray-900 rounded-[4rem] mx-4 md:mx-10 my-10 text-white overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+        <div class="order-2 lg:order-1 relative">
+           {/* Mock App UI */}
+           <div class="bg-gray-800 rounded-3xl p-6 border border-white/10 shadow-3xl">
+              <div class="flex justify-between items-center mb-8">
+                 <h4 class="font-mono text-green-400">#GREENHOUSE_STATUS</h4>
+                 <div class="w-3 h-3 bg-green-500 rounded-full animate-ping"></div>
+              </div>
+              <div class="space-y-6">
+                 <div class="flex justify-between border-b border-white/5 pb-2">
+                    <span class="text-gray-400">Harorat:</span>
+                    <span class="font-bold">24.5°C</span>
+                 </div>
+                 <div class="flex justify-between border-b border-white/5 pb-2">
+                    <span class="text-gray-400">Namlik:</span>
+                    <span class="font-bold">62%</span>
+                 </div>
+                 <div class="p-4 bg-green-900/20 rounded-xl text-green-400 text-sm italic border border-green-500/20">
+                    "AI: Optimal sharoit aniqlandi. Sug'orish keyinga qoldirildi."
+                 </div>
+              </div>
+           </div>
         </div>
-        <div class="bg-gray-800 border border-gray-700 p-6 rounded-3xl shadow-2xl">
-          <div class="flex items-center gap-2 mb-6">
-            <div class="w-3 h-3 bg-red-500 rounded-full"></div>
-            <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
-            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
-          </div>
-          <div class="space-y-4 font-mono text-sm text-green-400">
-            <p>{`> Initializing sensors... OK`}</p>
-            <p>{`> Analyzing soil humidity: 64%`}</p>
-            <p>{`> AI Recommendation: Open roof for 10 min`}</p>
-            <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
-              <div class="bg-green-500 h-full w-[70%]"></div>
-            </div>
-          </div>
+        <div class="order-1 lg:order-2">
+          <h2 class="text-5xl font-bold mb-8 italic">Aqlli Monitoring</h2>
+          <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+            Bizning datchiklarimiz tuproqdan tortib, havo tarkibidagi CO2 miqdorigacha nazorat qiladi. Telegram bot orqali har daqiqa hisobot oling.
+          </p>
+          <ul class="space-y-4 font-semibold text-green-500">
+            <li>✓ Avtomatik tomchilatib sug'orish</li>
+            <li>✓ Avtonom ventilyatsiya tizimi</li>
+            <li>✓ Kasalliklarni erta aniqlash AI moduli</li>
+          </ul>
         </div>
       </div>
     </section>

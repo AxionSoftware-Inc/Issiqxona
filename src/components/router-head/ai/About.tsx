@@ -12,13 +12,15 @@ export default component$(() => {
           <h2 class="text-4xl font-bold mb-10">Amaldagi Loyihalar</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="group relative overflow-hidden rounded-2xl h-60 bg-gray-200">
-               <div class="absolute inset-0 bg-black/40 flex items-end p-6">
-                  <span class="text-white font-bold">Buxoro Modulli Issiqxona #01</span>
+               <div class="absolute inset-0 bg-black/40 flex ">
+               <img class="w-130 h-60" src="https://m.media-amazon.com/images/I/91RSeLHOyFL._AC_SL1000__.jpg" alt="" />
+                  <span class="text-white font-bold"></span>
                </div>
             </div>
-            <div class="group relative overflow-hidden rounded-2xl h-60 bg-gray-300">
-               <div class="absolute inset-0 bg-black/40 flex items-end p-6">
-                  <span class="text-white font-bold">Toshkent AI Monitoring Lab</span>
+            <div class="group relative overflow-hidden rounded-2xl h-60 bg-gray-200">
+               <div class="absolute inset-0 bg-black/40 flex ">
+               <img class="w-130 h-60" src="https://m.media-amazon.com/images/I/91RSeLHOyFL._AC_SL1000__.jpg" alt="" />
+                  <span class="text-white font-bold"></span>
                </div>
             </div>
           </div>
